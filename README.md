@@ -3,6 +3,7 @@ Python风格规范
 
 <br>
 
+
 [TOC]
 
 
@@ -236,7 +237,7 @@ Shebang
 ### Tip
 大部分.py文件不必以#!作为文件的开始. 根据 [PEP-394](http://www.python.org/dev/peps/pep-0394/ "PEP-394"), 程序的main文件应该以 #!/usr/bin/python2或者 #!/usr/bin/python3开始.
 
-(译者注: 在计算机科学中, [Shebang](http://en.wikipedia.org/wiki/Shebang_(Unix) (也称为Hashbang)是一个由井号和叹号构成的字符串行(#!), 其出现在文本文件的第一行的前两个字符. 在文件中存在Shebang的情况下, 类Unix操作系统的程序载入器会分析Shebang后的内容, 将这些内容作为解释器指令, 并调用该指令, 并将载有Shebang的文件路径作为该解释器的参数. 例如, 以指令#!/bin/sh开头的文件在执行时会实际调用/bin/sh程序.)
+(译者注: 在计算机科学中, [Shebang](http://en.wikipedia.org/wiki/Shebang_(Unix)) (也称为Hashbang)是一个由井号和叹号构成的字符串行(#!), 其出现在文本文件的第一行的前两个字符. 在文件中存在Shebang的情况下, 类Unix操作系统的程序载入器会分析Shebang后的内容, 将这些内容作为解释器指令, 并调用该指令, 并将载有Shebang的文件路径作为该解释器的参数. 例如, 以指令#!/bin/sh开头的文件在执行时会实际调用/bin/sh程序.)
 
 #!先用于帮助内核找到Python解释器, 但是在导入模块时, 将会被忽略. 因此只有被直接执行的文件中才有必要加入#!.
 
